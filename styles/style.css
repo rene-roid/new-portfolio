@@ -14,62 +14,15 @@ html {
 }
 
 body {
+    max-width: 100vh;
     /* background-color: #12181c; */
+    /* overflow-x: hidden; */
     background-image: linear-gradient(#12181c, #1b2232);
-    overflow-x: hidden;
-}
-
-header {
-    width: 100%;
-    height: 80px;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 45%;
-    height: 100%;
-
-    padding-left: 25px;
-    padding-top: 10px;
-    font-size: 2.2em;
-
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-/* #region Hamburger menu */
-.burger {
-    width: 55px;
-    height: 55px;
-    border-radius: 10px;
-    /* background: white; */
-    /* box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px; */
-    ;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    transition: all .5s ease;
-    margin: 1em;
-
-    z-index: 10;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
-.strip div {
-    height: 4px;
-    border-radius: 2px;
-    background: rgb(255, 255, 255);
-    margin: 7px;
-    transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
-    width: 40px;
-}
-
-/* #endregion Hamburger menu */
 
 /* #region Navbar */
 .nav-bar {
@@ -118,6 +71,8 @@ header {
     text-align: center;
     margin-top: 20vh;
 
+    width: 100%;
+
     height: 50vh;
 }
 
@@ -143,6 +98,18 @@ header {
 
 .scale-up-center{
     margin-top: 25px;
+}
+
+.home-btn {
+    text-decoration: none;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.btn-box {
+    padding-top: 10px;
+    width: 70%;
+    margin: auto;
 }
 
 .btn {
@@ -349,4 +316,57 @@ header {
     padding-right: 2em;
 
     margin-bottom: 28px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper-item {
+    background-color: #12181c;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    position: relative;
+}
+
+.w-image {
+    background-color: white;
+
+    min-width: 4em;
+    min-height: 4em;
+    max-width: 4em;
+    max-height: 4em;
+
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.w-image img {
+    width: 110%;
+    height: 110%;
+}
+
+.w-text {
+    margin-left: 10px;
+    display: block;
+    right: 0;
+    max-width: fit-content;
+    text-align: justify;
+}
+
+.w-arrow {
+    position: absolute; 
+    bottom: 10px;
+    right: 20px;
 }

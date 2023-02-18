@@ -5,9 +5,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/img/Screenshot 2023-02-01 202251.png">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/animations.css">
         <link rel="stylesheet" href="styles/gradients.css">
+        <link rel="stylesheet" href="styles/header.css">
         <title>Home page</title>
     </head>
 
@@ -49,17 +51,22 @@
                 <h1>Hi, I'm <a class="pink-orange-gradient hover-white">Fernando</a>.
                 </h1>
                 <h2 class="home-subtitle">Welcome to my website!</h2>
-                <h2 class="home-subtitle">This website isn't finished yet!</h2>
+                <!-- <h2 class="home-subtitle">This website isn't finished yet!</h2> -->
                 <h3 class="home-intro">I'm a <b>Junior</b> <u>software</u> and
                     <u>web developer</u>.</h3>
-                <div class="scale-up-center"><a class="btn home-btn"
-                        href="#about">Learn More!</a></div>
+                <!-- scale-up-center -->
+
+                <div class="btn-box scale-up-center">
+                    <a class="btn home-btn" href="#about">Learn More!</a>
+                </div>
+
+
 
             </div>
 
             <div class="content">
-                <div class="about" id="about">
-                    <h2 class="about-title fade-in-left"><div
+                <div class="about" >
+                    <h2 class="about-title fade-in-left" id="about"><div
                             class="about-title-box">About me</div></h2>
                     <br>
                     <p class="about-content">
@@ -155,27 +162,61 @@
                 </div>
 
                 <div class="projects" id="projects">
-                    <h2 class="projects-title fade-in-left"><div class="projects-title-box">Projects</div></h2>
+                    <h2 class="projects-title fade-in-left"><div
+                            class="projects-title-box">Projects</div></h2>
                     <p class="projects-content">
                         Hey there! Take a quick look at my most recent projects!
                     </p>
-
+                    
+                    <div class="wrapper">
+                        <a class="wrapper-item">
+                            <img class="w-image" src="./assets/img/brainfuck.png"></img>
+                            <div class="w-text">
+                                BrainF**k visualizer in C#
+                                <br>
+                            </div>
+                            <div class="w-arrow slide-right">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a class="wrapper-item">
+                            <img class="w-image"></img>
+                            <div class="w-text">
+                                Scuffed Anime Chess in Unity
+                                <br>
+                            </div>
+                            <div class="w-arrow slide-right">
+                                <i class="fas fa-arrow-right "></i>
+                            </div>
+                        </a>
+                        <a class="wrapper-item">
+                            <img class="w-image"></img>
+                            <div class="w-text">
+                                Rythm runner game in Unity
+                                <br>
+                            </div>
+                            <div class="w-arrow slide-right">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="credits hacked" value="Hacked text 1">
-                <a href="https://kprverse.com/" target="_blank">Hacked text 1</a>
-            </div>
+            <hacked class="credits hacked" data-value="Hacked text 1">
+                Hacked text 1
+            </hacked>
 
-            <div class="credits hacked" value="Hacked text 2">
-                <a href="https://kprverse.com/">Hacked text 2</a>
-            </div>
+            <hacked class="credits hacked" data-value="Hacked text 2">
+                Hacked text 2
+            </hacked>
 
         </main>
 
 
 
         <script src="js/main.js"></script>
+        <script src="https://kit.fontawesome.com/ef97864b89.js" crossorigin="anonymous"></script>
         <!-- Autotype -->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
