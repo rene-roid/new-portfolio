@@ -1,28 +1,25 @@
-function NavbarOpenClose() {
-    const nav = document.querySelector("nav");
+document.querySelector(".burger").addEventListener("click", function () {
+    let navBurger = document.querySelector(".nav-bar")
 
-    if (nav.style.display === "none") {
-        nav.style.display = "block";
+    if (navBurger.style.display === "") navBurger.style.display = "none";
+
+    if (navBurger.style.display === "none") {
+        this.classList.toggle("active");
+        navBurger.style.display = "block";
     } else {
-        nav.style.display = "none";
+        navBurger.style.display = "none";
+        if (this.classList.contains("active")) {
+            this.classList.remove("active");
+        }
+    }
+});
+
+function hide_burger() {
+    let navBurger = document.querySelector(".nav-bar")
+    let burger = document.querySelector(".burger")
+
+    if (navBurger.style.display === "block") {
+        navBurger.style.display = "none";
+        burger.classList.remove("active");
     }
 }
-
-const fade_in = document.querySelector('.fade-in-left');
-
-const options = {
-    rootMargin: '0px',
-    threshold: 0.5
-};
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            fade_in.classList.add('animate');
-            observer.unobserve(entry.target);
-            console.log('fade in');
-        }
-    });
-}, options);
-
-observer.observe(fade_in);

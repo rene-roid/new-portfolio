@@ -27,7 +27,6 @@ header {
     justify-content: space-between;
 }
 
-
 .logo {
     width: 45%;
     height: 100%;
@@ -62,10 +61,10 @@ header {
 
 
 .strip div {
-    height: 3px;
+    height: 4px;
     border-radius: 2px;
     background: rgb(255, 255, 255);
-    margin: 10px;
+    margin: 7px;
     transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
     width: 40px;
 }
@@ -81,8 +80,14 @@ header {
 
     display: none;
 
-    position: absolute;
+    position: fixed;
     z-index: 9;
+
+    transition: all 0.5s ease;
+}
+
+.nav-bar.active {
+    display: block;
 }
 
 .nav-bar ul {
@@ -243,7 +248,7 @@ header {
 }
 
 .about-langs-bar {
-    width: 88%;
+    width: 85%;
     height: 15px;
     margin-top: 10px;
     background-color: #2f373c;
@@ -266,6 +271,18 @@ header {
     font-weight: bold;
     padding: 0 10px;
     line-height: 15px;
+}
+
+.about-tools, .about-other {
+    height: 2em;
+}
+
+.about-me-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0.4em;
+
+    margin-bottom: 20px;
 }
 
 /* #endregion About */
@@ -306,12 +323,21 @@ header {
     text-align: center;
 }
 
-.project-title {
-    font-size: 1.5em;
+.projects-title {
+    font-size: 2.2em;
     text-align: center;
     margin-top: 0.4em;
 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.projects-title-box {
+    background-color: rgb(46, 146, 240);
+    color: #12181c;
+    font-weight: bold;
+    width: 50%;
+
+    margin: auto;
 }
 
 .project-content {
@@ -322,28 +348,5 @@ header {
     padding-left: 2em;
     padding-right: 2em;
 
-    margin-bottom: 14px;
-}
-
-.projects-list {
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 2em;
-}
-
-.project-item {
-    margin: 15px;
-}
-
-.about-tools, .about-other {
-    height: 2em;
-}
-
-.about-me-title {
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 0.4em;
-
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
