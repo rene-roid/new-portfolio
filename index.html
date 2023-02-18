@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/animations.css">
+        <link rel="stylesheet" href="styles/gradients.css">
+        <title>Home page</title>
+    </head>
+
+    <body>
+        <!-- Navbar Section -->
+        <header>
+            <div class="logo"> Fernando </div>
+            <a class="burger" onclick="NavbarOpenClose()">
+                <div class="strip burger-strip">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </a>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="" onclick="NavbarOpenClose()">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" onclick="NavbarOpenClose()">About</a>
+                    </li>
+                    <li>
+                        <a href="" onclick="NavbarOpenClose()">Projects</a>
+                    </li>
+                    <li>
+                        <a href="" onclick="NavbarOpenClose()">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <div class="mainTitle" id="home">
+                <h1>Hi, I'm <a class="pink-orange-gradient hover-white">Fernando</a>.
+                </h1>
+                <h2 class="home-subtitle">Welcome to my website!</h2>
+                <h3 class="home-intro">I'm a <b>Junior</b> <u>software</u> and
+                    <u>web developer</u>.</h3>
+                <div class="scale-up-center"><a class="btn home-btn"
+                        href="#about">Learn More!</a></div>
+
+            </div>
+
+            <div class="content">
+                <div class="about" id="about">
+                    <h2 class="about-title fade-in-left"><div
+                            class="about-title-box">About me</div></h2>
+                    <br>
+                    <p class="about-content">
+                        <b class="orange-yellow-gradient">Where am I?</b> I'm
+                        based in Barcelona and I am <u>currently
+                            studying</u> <b class="blue-green-gradient">software</b>
+                        and <b class="yellow-purple-gradient">videogame
+                            development</b>.
+                    </p>
+                    <br>
+                    <p class="about-content">
+                        I'm down to work on <u class="green-yellow-gradient">any project</u>, wether it's remote or
+                        in person 🫡.
+                    </p>
+                    <br>
+                    <h3 class="about-lang-title">
+                        <u>Languages I know: </u>
+                    </h3>
+                    <div class="about-langs">
+                        C#
+                        <div class="about-lang">
+                            <div class="about-lang-perc">85%</div>
+                            <div class="about-langs-bar">
+                                <div class="about-langs-bar-fill
+                                    dark-green-gradient-bg" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <br>
+
+                        Java
+                        <div class="about-lang">
+                            <div class="about-lang-perc">80%</div>
+                            <div class="about-langs-bar">
+                                <div class="about-langs-bar-fill
+                                    red-to-orange-gradient-bg" style="width:
+                                    80%;"></div>
+                            </div>
+                        </div>
+                        <br>
+
+                        Typescript / Javascript
+                        <div class="about-lang">
+                            <div class="about-lang-perc">65%</div>
+                            <div class="about-langs-bar">
+                                <div class="about-langs-bar-fill
+                                    dark-blue-gradient-bg" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                        <br>
+
+                        Python
+                        <div class="about-lang">
+                            <div class="about-lang-perc">50%</div>
+                            <div class="about-langs-bar">
+                                <div class="about-langs-bar-fill
+                                    green-to-yellow-gradient-bg" style="width:
+                                    50%;"></div>
+                            </div>
+                        </div>
+                        <br>
+
+                        C++
+                        <div class="about-lang">
+                            <div class="about-lang-perc">35%</div>
+                            <div class="about-langs-bar">
+                                <div class="about-langs-bar-fill
+                                    dark-green-gradient-bg" style="width: 35%;"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="about-other">
+                            Here are some other languages I know: <u><span
+                                class="other-langs-type"></span></u>
+                        </div>
+                        <br>
+                        <div class="about-tools">
+                            Some tools I use: <u><span
+                                class="tools-typed"></span></u>
+                        </div>
+                    </div>
+                    <br>
+                    <h3 class="about-me-title"><u>A little bit more about me</u> 😉</h3>
+                    <p class="about-content">
+                        I enjoy creating things, whether it's websites, mobile
+                        apps, videogames, or anything in between. My goal is to
+                        always build things that are useful and easy to use,
+                        while also pushing myself to learn new skills on a daily
+                        basis. I'm passionate about programing and I'm always
+                        looking to learn new things.
+                    </p>
+                </div>
+
+                <div class="projects">
+                    <h2 class="projects-title">Projects</h2>
+                    <p class="projects-content">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Vel aliquid facilis voluptates sequi a reiciendis
+                        quae culpa unde, consequatur magnam.
+                    </p>
+
+                    <ul class="projects-list">
+                        <li class="project-item">
+                            <a href="https://kprverse.com/">Project 1</a>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://kprverse.com/">Project 2</a>
+                        </li>
+                        <li class="project-item">
+                            <a href="https://kprverse.com/">Project 3</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="credits hacked" value="Hacked text 1">
+                <a href="https://kprverse.com/" target="_blank">Hacked text 1</a>
+            </div>
+
+            <div class="credits hacked" value="Hacked text 2">
+                <a href="https://kprverse.com/">Hacked text 2</a>
+            </div>
+
+        </main>
+
+
+
+        <script src="js/main.js"></script>
+        <!-- Autotype -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".other-langs-type", {
+                strings: ["HTML.", "CSS.", "PHP.", "SQL.", "React.", "Node."],
+              typeSpeed: 100,
+              backSpeed: 50,
+              loop: true
+            });
+            
+            var typed2 = new Typed(".tools-typed", {
+                strings: ["Visual Studio Code.", "Visual Studio.", "IntelliJ.", "PyCharm", "Unity.", "Git.", "GitHub.",  "Blender.", "Photoshop.", "XD.", "Audacity."],
+              typeSpeed: 100,
+              backSpeed: 50,
+              loop: true
+            }); 
+          </script>
+        <script type="text/javascript">
+            // Detect if browser is in Spanish
+            var lang = navigator.language || navigator.userLanguage;
+            if (lang.includes("es")) {
+            // Redirect to Spanish version
+            //window.location.replace("https://rene-roid.github.io/Portfolio/es-ES/index.html");
+            }
+        </script>
+    </body>
+
+</html>
