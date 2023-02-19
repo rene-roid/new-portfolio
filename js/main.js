@@ -1,16 +1,22 @@
 document.querySelector(".burger").addEventListener("click", function () {
-    let navBurger = document.querySelector(".nav-bar")
+    // If the width is less than 768px
+    if (window.innerWidth < 768) {
+        let navBurger = document.querySelector(".nav-bar")
 
-    if (navBurger.style.display === "") navBurger.style.display = "none";
-
-    if (navBurger.style.display === "none") {
-        this.classList.toggle("active");
-        navBurger.style.display = "block";
-    } else {
-        navBurger.style.display = "none";
-        if (this.classList.contains("active")) {
-            this.classList.remove("active");
+        if (navBurger.style.display === "") navBurger.style.display = "none";
+    
+        if (navBurger.style.display === "none") {
+            this.classList.toggle("active");
+            navBurger.style.display = "block";
+        } else {
+            navBurger.style.display = "none";
+            if (this.classList.contains("active")) {
+                this.classList.remove("active");
+            }
         }
+    } else {
+        let navBurger = document.querySelector(".nav-bar")
+        navBurger.style.display = "block";
     }
 });
 
