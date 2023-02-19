@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/img/Screenshot 2023-02-01
+            202251.png">
+        <link rel="stylesheet" href="../../styles/style.css">
+        <link rel="stylesheet" href="../../styles/projects.css">
+        <link rel="stylesheet" href="../../styles/animations.css">
+        <link rel="stylesheet" href="../../styles/gradients.css">
+        <link rel="stylesheet" href="../../styles/header.css">
+        <title>BrainF**k Visualizer</title>
+    </head>
+    <body>
+        <!-- Navbar Section -->
+        <header>
+            <div class="logo"> Fernando </div>
+            <a class="burger">
+                <div class="strip burger-strip">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </a>
+
+            <nav class="nav-bar slide-in-fwd-center show-on-scroll">
+                <ul>
+                    <li>
+                        <a href="../../index.html" class="nav-item"
+                            onclick="hide_burger()">Home</a>
+                    </li>
+                    <li>
+                        <a href="../projects.html" class="nav-item"
+                            onclick="hide_burger()">Projects</a>
+                    </li>
+                    <!-- <li>
+                        <a href="" class="nav-item" onclick="hide_burger()">Contact</a>
+                    </li> -->
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <div class="project-title margin-top">
+                <h2 class="projects-title fade-in-left show-on-scroll"><div
+                        class="projects-title-box project-background-color-red width-title">BrainF**k Visualizer</div></h2>
+                <p class="project-content fade-in-left show-on-scroll">
+                    This is a BrainF**k visualizer and compiler made in C# using Unity.
+                    <br><br>
+                    This project allows you to visualize the execution of a BrainF**k program in real time.
+                    <br><br>
+                    I made this project because when I wanted to take on a challenge and do anything in BrainF**k I ussually had a nightmare knoing where the pointer was or what value contained each cell, so I made this project to be able to know what is happening when I run the code.
+                </p>
+
+                <img class="project-img" src="../../assets/gif/brainfuck_example.gif"></img>
+
+                <a class="proj-btn project-img" href="https://github.com/rene-roid/RythmWooga">Take a look at the source code!</a>
+            </div>
+        </main>
+
+        <script src="../../js/main.js"></script>
+        <script src="../../js/show-on-scroll.js"></script>
+        <script src="https://kit.fontawesome.com/ef97864b89.js"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

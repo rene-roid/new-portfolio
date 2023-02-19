@@ -96,7 +96,7 @@ body {
     margin-bottom: 14px;
 }
 
-.scale-up-center{
+.scale-up-center {
     margin-top: 25px;
 }
 
@@ -174,7 +174,7 @@ body {
     text-align: center;
     margin-top: 0.4em;
 
-    line-height : 1.5em;
+    line-height: 1.5em;
 
     padding-left: 1em;
     padding-right: 1em;
@@ -193,6 +193,19 @@ body {
     margin-bottom: 14px;
 
     font-weight: bold;
+}
+
+.about-lang-box,
+.about-lang-box u {
+    background-color: #f46f47;
+    color: #12181c;
+    font-weight: bold;
+    width: 70%;
+
+    margin: auto;
+    padding: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .about-langs {
@@ -240,7 +253,8 @@ body {
     line-height: 15px;
 }
 
-.about-tools, .about-other {
+.about-tools,
+.about-other {
     height: 2em;
 }
 
@@ -340,7 +354,7 @@ body {
 }
 
 .w-image {
-    background-color: white;
+    background-color: #12181c;
 
     min-width: 4em;
     min-height: 4em;
@@ -366,7 +380,31 @@ body {
 }
 
 .w-arrow {
-    position: absolute; 
+    position: absolute;
     bottom: 10px;
     right: 20px;
+}
+
+.all-proj-btn {
+    background-color: #12181c;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    cursor: pointer;
+
+    /* Put the button the the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+@media (min-width: 480px) {
+    body {
+        background-color: red;
+        background-image: none;
+    }
 }

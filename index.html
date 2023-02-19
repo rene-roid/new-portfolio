@@ -25,7 +25,7 @@
                 </div>
             </a>
 
-            <nav class="nav-bar">
+            <nav class="nav-bar slide-in-fwd-center show-on-scroll">
                 <ul>
                     <li>
                         <a href="" class="nav-item" onclick="hide_burger()">Home</a>
@@ -66,10 +66,10 @@
 
             <div class="content">
                 <div class="about" >
-                    <h2 class="about-title fade-in-left" id="about"><div
+                    <h2 class="about-title fade-in-left show-on-scroll" id="about"><div
                             class="about-title-box">About me</div></h2>
                     <br>
-                    <p class="about-content">
+                    <p class="about-content fade-in-bottom show-on-scroll">
                         <b class="orange-yellow-gradient">Where am I?</b> I'm
                         based in Barcelona and I am <u>currently
                             studying</u> <b class="blue-green-gradient">software</b>
@@ -77,16 +77,16 @@
                             development</b>.
                     </p>
                     <br>
-                    <p class="about-content">
+                    <p class="about-content fade-in-bottom show-on-scroll">
                         I'm down to work on <span class="green-yellow-gradient">any
-                            project</span>, wether it's remote or
+                            project</span>, whether it's remote or
                         in person 🫡.
                     </p>
                     <br>
-                    <h3 class="about-lang-title">
-                        <u>Languages I know: </u>
+                    <h3 class="about-lang-title fade-in-right show-on-scroll">
+                        <div class="about-lang-box"><u>Languages I know:</u></div>
                     </h3>
-                    <div class="about-langs">
+                    <div class="about-langs fade-in-bottom show-on-scroll">
                         C#
                         <div class="about-lang">
                             <div class="about-lang-perc">85%</div>
@@ -149,9 +149,9 @@
                         </div>
                     </div>
                     <br>
-                    <h3 class="about-me-title"><u>A little bit more about me</u>
+                    <h3 class="about-me-title fade-in-bottom show-on-scroll"><u>A little bit more about me</u>
                         😉</h3>
-                    <p class="about-content">
+                    <p class="about-content fade-in-bottom show-on-scroll">
                         I enjoy creating things, whether it's websites, mobile
                         apps, videogames, or anything in between. My goal is to
                         always build things that are useful and easy to use,
@@ -162,14 +162,14 @@
                 </div>
 
                 <div class="projects" id="projects">
-                    <h2 class="projects-title fade-in-left"><div
+                    <h2 class="projects-title fade-in-left show-on-scroll"><div
                             class="projects-title-box">Projects</div></h2>
                     <p class="projects-content">
                         Hey there! Take a quick look at my most recent projects!
                     </p>
                     
                     <div class="wrapper">
-                        <a class="wrapper-item">
+                        <a class="wrapper-item" href="pages/projects/BrainFuckVisualizer.html">
                             <img class="w-image" src="./assets/img/brainfuck.png"></img>
                             <div class="w-text">
                                 BrainF**k visualizer in C#
@@ -179,8 +179,8 @@
                                 <i class="fas fa-arrow-right"></i>
                             </div>
                         </a>
-                        <a class="wrapper-item">
-                            <img class="w-image"></img>
+                        <a class="wrapper-item" href="pages/projects/scuffed_chess.html">
+                            <img class="w-image" src="/assets/img/chess.png"></img>
                             <div class="w-text">
                                 Scuffed Anime Chess in Unity
                                 <br>
@@ -189,8 +189,8 @@
                                 <i class="fas fa-arrow-right "></i>
                             </div>
                         </a>
-                        <a class="wrapper-item">
-                            <img class="w-image"></img>
+                        <a class="wrapper-item" href="pages/projects/rythm_wooga.html">
+                            <img class="w-image" src="./assets/img/Caveman-Kun-Idle.png"></img>
                             <div class="w-text">
                                 Rythm runner game in Unity
                                 <br>
@@ -200,7 +200,12 @@
                             </div>
                         </a>
                     </div>
+                    
+                <a class="all-proj-btn" href="/pages/projects.html">
+                    Take a look at all my projects!
+                </a>
                 </div>
+
             </div>
 
             <hacked class="credits hacked" data-value="Hacked text 1">
@@ -216,6 +221,7 @@
 
 
         <script src="js/main.js"></script>
+        <script src="js/show-on-scroll.js"></script>
         <script src="https://kit.fontawesome.com/ef97864b89.js" crossorigin="anonymous"></script>
         <!-- Autotype -->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
