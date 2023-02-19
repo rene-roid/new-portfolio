@@ -403,8 +403,8 @@ body {
 }
 
 @media (min-width: 480px) {
-    body {
+    /* body {
         background-color: red;
         background-image: none;
-    }
+    } */
 }
