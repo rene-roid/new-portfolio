@@ -448,4 +448,44 @@ body {
         padding-bottom: 1.2rem;
         margin: auto;
     }
+
+    @media (min-width: 1024px) {
+        .mainTitle h1 {
+            padding-bottom: 0.6em;
+            font-size: 2em;
+        }
+
+        .home-subtitle {
+            padding-bottom: 0.6em;
+        }
+
+        .home-btn {
+            margin-top: 0.6em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+
+        .content {
+            width: 70%;
+
+            margin: auto;
+
+        }
+
+        .wrapper {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .about-lang {
+            width: 100%;
+        }
+
+        .about-langs-bar {
+            width: 95%
+        }
+
+        .about-lang-perc {
+            right: 0em;
+        }
+    }
 }

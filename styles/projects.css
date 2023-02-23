@@ -65,4 +65,11 @@
         width: 50%;
         font-size: 1em;
     }
+
+    @media (min-width: 1024px) {
+        main {
+            width: 70%;
+            margin: auto;
+        }
+    }
 }
