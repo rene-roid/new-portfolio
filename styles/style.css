@@ -360,6 +360,11 @@ body {
 
 }
 
+.less-size {
+    width: 60%;
+    margin: auto;
+}
+
 @media (min-width: 768px) {
     body {
         max-width: 100%;
@@ -446,6 +451,12 @@ body {
         width: 40%;
         padding-top: 1rem;
         padding-bottom: 1.2rem;
+        margin: auto;
+    }
+
+    .less-size {
+        /* remove style */
+        width: 80%;
         margin: auto;
     }
 
