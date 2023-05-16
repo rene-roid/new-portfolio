@@ -500,3 +500,25 @@ body {
         }
     }
 }
+
+.margin-top {
+    margin-top: 10em;
+}
+
+.height-auto {
+    height: auto;
+}
+
+.social-icon {
+    width: 2em;
+    height: 2em;
+    margin: 0.5em;
+}
+
+.white-svg {
+    fill: #fff;
+}
+
+.no-link-underline {
+    text-decoration: none;
+}
