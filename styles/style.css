@@ -210,6 +210,38 @@ body {
     line-height: 15px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+    /* align-items: center; */
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+.grid-item-green {
+    background-color: rgba(22, 169, 22, 0.3);
+}
+
+.grid-item-red {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.grid-item-blue {
+    background-color: rgba(40, 40, 197, 0.433);
+}
+
+.grid-item-yellow {
+    background-color: rgba(255, 255, 0, 0.3);
+}
+
 .about-tools,
 .about-other {
     height: 2em;
@@ -415,6 +447,11 @@ body {
         right: 2em;
     }
 
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 3em;
+    }
+
     .about-me-title {
         font-size: 1.6em;
     }
@@ -493,6 +530,15 @@ body {
 
         .about-langs-bar {
             width: 95%
+        }
+
+        .grid-container {
+            grid-template-columns: repeat(3, 1fr);
+            margin: 3em;
+        }
+
+        .about-other, .about-tools {
+            text-align: center;
         }
 
         .about-lang-perc {
