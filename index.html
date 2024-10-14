@@ -1,225 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="assets/img/Screenshot 2023-02-01 202251.png">
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/animations.css">
-        <link rel="stylesheet" href="styles/gradients.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <title>Home page</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/Screenshot 2023-02-01 202251.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/gradients.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title>Fernando's Portfolio</title>
+    <meta name="description" content="Fernando's Portfolio - Junior Software and Web Developer">
+    <meta name="keywords" content="Junior Developer, Software Developer, Web Developer, Barcelona, Projects">
+</head>
 
-    <body>
-        <!-- Navbar Section -->
-        <header>
-            <div class="logo"> Fernando </div>
-            <a class="burger">
-                <div class="strip burger-strip">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+<body>
+<!-- Navbar Section -->
+<header>
+    <div class="logo"><a href="#home" title="Go to Home">Fernando</a></div>
+    <a class="burger">
+        <div class="strip burger-strip">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </a>
+
+    <nav class="nav-bar slide-in-fwd-center show-on-scroll">
+        <ul>
+            <li>
+                <a href="#home" class="nav-item" onclick="hide_burger()" title="Go to Home">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="nav-item" onclick="hide_burger()" title="Learn more about me">About</a>
+            </li>
+            <li>
+                <a href="#projects" class="nav-item" onclick="hide_burger()" title="View my projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-item" onclick="hide_burger()" title="Get in touch">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Main Title Section -->
+    <div class="mainTitle" id="home">
+        <h1>Hi, I'm <a class="pink-orange-gradient hover-white">Fernando</a>.</h1>
+        <h2 class="home-subtitle">Discover My World of Development!</h2>
+        <h3 class="home-intro">I'm a passionate <b>Junior Software and Web Developer</b> focused on creating dynamic and engaging digital experiences.</h3>
+        <div class="btn-box scale-up-center">
+            <a class="btn home-btn" href="#about">Explore My Journey!</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="content">
+        <div class="about">
+            <h2 class="about-title fade-in-left show-on-scroll" id="about">
+                <div class="about-title-box">About Me</div>
+            </h2>
+            <br>
+            <p class="about-content fade-in-bottom show-on-scroll">
+                <b class="orange-yellow-gradient">My Base</b>: I'm based in Barcelona and currently studying <b class="blue-green-gradient">software</b> and <b class="yellow-purple-gradient">videogame development</b>, always eager to collaborate on exciting projects—whether remotely or in person 🫡.
+            </p>
+            <br>
+            <h3 class="about-lang-title fade-in-right show-on-scroll">
+                <div class="about-lang-box">Languages I know:</div>
+            </h3>
+            <div class="about-langs fade-in-bottom show-on-scroll" id="code">
+                <div class="grid-container">
+                    <div class="grid-item grid-item-green">C#</div>
+                    <div class="grid-item grid-item-red">Java</div>
+                    <div class="grid-item grid-item-blue">Typescript</div>
+                    <div class="grid-item grid-item-yellow">Javascript</div>
+                    <div class="grid-item grid-item-green">Python</div>
+                    <div class="grid-item grid-item-blue">C++</div>
                 </div>
-            </a>
-
-            <nav class="nav-bar slide-in-fwd-center show-on-scroll">
-                <ul>
-                    <li>
-                        <a href="" class="nav-item" onclick="hide_burger()">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="nav-item"
-                            onclick="hide_burger()">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="nav-item"
-                            onclick="hide_burger()">Projects</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav-item" onclick="hide_burger()">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </header>
-
-        <main>
-            <div class="mainTitle" id="home">
-                <h1>Hi, I'm <a class="pink-orange-gradient hover-white">Fernando</a>.
-                </h1>
-                <h2 class="home-subtitle">Welcome to my website!</h2>
-                <!-- <h2 class="home-subtitle">This website isn't finished yet!</h2> -->
-                <h3 class="home-intro">I'm a <b>Junior</b> <a href="#code">software</a> and
-                    <a href="#code">web developer</a>.</h3>
-                <!-- scale-up-center -->
-
-                <div class="btn-box scale-up-center">
-                    <a class="btn home-btn" href="#about">Learn More!</a>
+                <br>
+                <div class="about-other">
+                    Here are some other languages I know: <u><span class="other-langs-type"></span></u>
+                </div>
+                <div class="about-tools">
+                    Some tools I use: <u><span class="tools-typed"></span></u>
                 </div>
             </div>
+            <br>
+            <h3 class="about-me-title fade-in-bottom show-on-scroll">
+                <u>A Little Bit More About Me</u> 😉
+            </h3>
+            <p class="about-content fade-in-bottom show-on-scroll">
+                I enjoy creating things, whether it's websites, mobile apps, videogames, or anything in between. My goal is to always build things that are useful and easy to use, while also pushing myself to learn new skills daily. I'm passionate about programming and always eager to learn something new.
+            </p>
+        </div>
 
-            <div class="content">
-                <div class="about" >
-                    <h2 class="about-title fade-in-left show-on-scroll" id="about"><div
-                            class="about-title-box">About me</div></h2>
-                    <br>
-                    <p class="about-content fade-in-bottom show-on-scroll">
-                        <b class="orange-yellow-gradient">Where am I?</b> I'm
-                        based in Barcelona and I am <b>currently
-                            studying</b> <b class="blue-green-gradient">software</b>
-                        and <b class="yellow-purple-gradient">videogame
-                            development</b>.
-                    </p>
-                    <br>
-                    <p class="about-content fade-in-bottom show-on-scroll">
-                        I'm down to work on <span class="green-yellow-gradient">any
-                            project</span>, whether it's remote or
-                        in person 🫡.
-                    </p>
-                    <br>
-                    <br>&nbsp;<br>&nbsp;
-                    <h3 class="about-lang-title fade-in-right show-on-scroll">
-                        <div class="about-lang-box">Languages I know:</div>
-                    </h3>
-                    <div class="about-langs fade-in-bottom show-on-scroll" id="code">
-                        <div class="grid-container">
-                            <div class="grid-item grid-item-green">C#</div>
-                            <div class="grid-item grid-item-red">Java</div>
-                            <div class="grid-item grid-item-blue">Typescript</div>
-                            <div class="grid-item grid-item-yellow">Javascript</div>
-                            <div class="grid-item grid-item-green">Python</div>
-                            <div class="grid-item grid-item-blue">C++</div>
-                          </div>
-                        <br>
-                        <div class="about-other">
-                            Here are some other languages I know: <u><span
-                                    class="other-langs-type"></span></u>
-                        </div>
-                        <!-- <br> -->
-                        <div class="about-tools">
-                            Some tools I use: <u><span
-                                    class="tools-typed"></span></u>
-                        </div>
-                    </div>
-                    <br>
-                    <h3 class="about-me-title fade-in-bottom show-on-scroll"><u>A little bit more about me</u>
-                        😉</h3>
-                    <p class="about-content fade-in-bottom show-on-scroll">
-                        I enjoy creating things, whether it's websites, mobile
-                        apps, videogames, or anything in between. My goal is to
-                        always build things that are useful and easy to use,
-                        while also pushing myself to learn new skills on a daily
-                        basis. I'm passionate about programing and I'm always
-                        looking to learn new things.
-                    </p>
-                </div>
+        <!-- Projects Section -->
+        <div class="projects" id="projects">
+            <h2 class="projects-title fade-in-left show-on-scroll">
+                <div class="projects-title-box">Projects</div>
+            </h2>
+            <p class="projects-content">
+                Here are some highlights of my work. Dive into each project to explore more.
+            </p>
 
-                <div class="projects" id="projects">
-                    <h2 class="projects-title fade-in-left show-on-scroll"><div
-                            class="projects-title-box">Projects</div></h2>
-                    <p class="projects-content">
-                        Hey there! Take a quick look at my most recent projects!
-                    </p>
-                    
-                    <div class="wrapper">
-                        <a class="wrapper-item" href="pages/projects/BrainFuckVisualizer.html">
-                            <img class="w-image" src="./assets/img/brainfuck.png"></img>
-                            <div class="w-text">
-                                BrainF**k visualizer in C#
-                                <br>
-                            </div>
-                            <div class="w-arrow slide-right">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </a>
-                        <a class="wrapper-item" href="pages/projects/scuffed_chess.html">
-                            <img class="w-image" src="./assets/img/chess.png"></img>
-                            <div class="w-text">
-                                Scuffed Anime Chess in Unity
-                                <br>
-                            </div>
-                            <div class="w-arrow slide-right">
-                                <i class="fas fa-arrow-right "></i>
-                            </div>
-                        </a>
-                        <a class="wrapper-item" href="pages/projects/rythm_wooga.html">
-                            <img class="w-image" src="./assets/img/Caveman-Kun-Idle.png"></img>
-                            <div class="w-text">
-                                Rythm runner game in Unity
-                                <br>
-                            </div>
-                            <div class="w-arrow slide-right">
-                                <i class="fas fa-arrow-right"></i>
-                            </div>
-                        </a>
+            <div class="wrapper">
+                <a class="wrapper-item" href="pages/projects/BrainFuckVisualizer.html">
+                    <img class="w-image" src="./assets/img/brainfuck.png" alt="BrainF**k Visualizer project screenshot">
+                    <div class="w-text">
+                        BrainF**k Visualizer in C#
                     </div>
-                    
-                    <div class="scale-up-center less-size">
-                        <a class="all-proj-btn" href="./pages/projects.html">
-                            Take a look at all my projects!
-                        </a>
+                    <div class="w-arrow slide-right">
+                        <i class="fas fa-arrow-right"></i>
                     </div>
-                    
-                    <div class="margin-top height-auto">
-                        <h3 class="about-lang-title fade-in-right show-on-scroll">
-                            <div class="about-lang-box">My Socials</div>
-
-                            <a href="https://github.com/rene-roid" target="_blank" class="no-link-underline">
-                                <img class="social-icon white-svg" src="./assets/svg/github-white.png"/>
-                            </a>
-                            <a href="https://www.linkedin.com/in/fsolorzanopdp/" target="_blank" class="no-link-underline">
-                                <img class="social-icon white-svg" src="./assets/img/linkedin.png"></img>
-                            </a>
-                        </h3>
+                </a>
+                <a class="wrapper-item" href="pages/projects/scuffed_chess.html">
+                    <img class="w-image" src="./assets/img/chess.png" alt="Scuffed Anime Chess project screenshot">
+                    <div class="w-text">
+                        Scuffed Anime Chess in Unity
                     </div>
-                </div>
-
+                    <div class="w-arrow slide-right">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a class="wrapper-item" href="pages/projects/rythm_wooga.html">
+                    <img class="w-image" src="./assets/img/Caveman-Kun-Idle.png" alt="Rythm Runner Game project screenshot">
+                    <div class="w-text">
+                        Rhythm Runner Game in Unity
+                    </div>
+                    <div class="w-arrow slide-right">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
             </div>
-            
 
-            <hacked class="credits hacked" data-value="Hacked text 1">
-                <!-- Hacked text 1 -->
-            </hacked>
+            <div class="scale-up-center less-size">
+                <a class="all-proj-btn" href="./pages/projects.html">See All My Creations!</a>
+            </div>
 
-            <hacked class="credits hacked" data-value="Hacked text 2">
-                <!-- Hacked text 2 -->
-            </hacked>
+            <div class="margin-top height-auto">
+                <h3 class="about-lang-title fade-in-right show-on-scroll">
+                    <div class="about-lang-box">My Socials</div>
+                    <div>
+                        <a href="https://github.com/rene-roid" target="_blank" class="no-link-underline" title="Visit my GitHub">
+                            <img class="social-icon white-svg" src="./assets/svg/github-white.png" alt="GitHub logo">
+                        </a>
+                        <a href="https://www.linkedin.com/in/fsolorzanopdp/" target="_blank" class="no-link-underline" title="Visit my LinkedIn">
+                            <img class="social-icon white-svg" src="./assets/img/linkedin.png" alt="LinkedIn logo">
+                        </a>
+                    </div>
+                </h3>
+            </div>
+        </div>
+    </div>
 
-        </main>
+    <!-- Footer Section -->
+    <footer>
+        <p class="credits fade-in-bottom show-on-scroll">Thanks for visiting my portfolio! Let's collaborate and create something amazing.</p>
+    </footer>
+</main>
 
+<script src="js/main.js"></script>
+<script src="js/show-on-scroll.js"></script>
+<script src="https://kit.fontawesome.com/ef97864b89.js" crossorigin="anonymous"></script>
+<!-- Autotype -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".other-langs-type", {
+        strings: ["HTML.", "CSS.", "PHP.", "SQL.", "React.", "Node."],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true
+    });
 
-
-        <script src="js/main.js"></script>
-        <script src="js/show-on-scroll.js"></script>
-        <script src="https://kit.fontawesome.com/ef97864b89.js" crossorigin="anonymous"></script>
-        <!-- Autotype -->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-            var typed = new Typed(".other-langs-type", {
-                strings: ["HTML.", "CSS.", "PHP.", "SQL.", "React.", "Node."],
-              typeSpeed: 100,
-              backSpeed: 50,
-              loop: true
-            });
-            
-            var typed2 = new Typed(".tools-typed", {
-                strings: ["Visual Studio Code.", "Visual Studio.", "IntelliJ.", "PyCharm", "Unity.", "Git.", "GitHub.",  "Blender.", "Photoshop.", "XD.", "Audacity."],
-              typeSpeed: 100,
-              backSpeed: 50,
-              loop: true
-            }); 
-          </script>
-        <script type="text/javascript">
-            // Detect if browser is in Spanish
-            var lang = navigator.language || navigator.userLanguage;
-            if (lang.includes("es")) {
-            // Redirect to Spanish version
-            //window.location.replace("https://rene-roid.github.io/Portfolio/es-ES/index.html");
-            }
-        </script>
-    </body>
+    var typed2 = new Typed(".tools-typed", {
+        strings: ["Visual Studio Code.", "Visual Studio.", "IntelliJ.", "PyCharm", "Unity.", "Git.", "GitHub.", "Blender.", "Photoshop.", "XD.", "Audacity."],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true
+    });
+</script>
+<script type="text/javascript">
+    // Detect if browser is in Spanish
+    var lang = navigator.language || navigator.userLanguage;
+    if (lang.includes("es")) {
+        // Redirect to Spanish version
+        window.location.href = "index-es.html";
+    }
+</script>
+</body>
 
 </html>
